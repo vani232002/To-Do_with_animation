@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./images/logo.jpg">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/7c4dc178f1.js" crossorigin="anonymous"></script>
+
+  <title>TODoList</title>
+</head>
+
+<body>
+  <div class="hero">
+    <div class="highway"></div>
+    <div class="city"></div>
+    <div class="car">
+        <img src="car.png">
+    </div>
+    <div class="wheel">
+        <img src="wheel.png" class="back-wheel" alt="Back Wheel">
+        <img src="wheel.png" class="front-wheel" alt="Front Wheel">
+    </div>
+  </div>
+
+  <div class="overlay">
+  <h1>TODo List</h1>
+    <main>
+      <section class="input-container">
+        <i class="fa-solid fa-scroll"></i>
+        <input type="text" placeholder="Add a task" data-task="input" id="input" class="input-data" required>
+        <button type="text" id="but"><i class="fa fa-plus-circle add-task" aria-hidden="true"></i></button>
+      </section>
+      <i class="fa-solid fa-check-double double-check-task" style="color: #828282;"></i><span>completed all tasks</span>
+      <div class="space"></div>
+      <span class="delete-all-tasks">Clear completed</span>
+      <hr>
+  
+      <ul id="list">
+      </ul>
+      <hr>
+      <div class="complete">
+        <p>Total tasks left:<span id="taskCount">0</span></p>
+        <span class="incomplete-tasks" style="margin-left: 0px;">Incomplete</span>
+        <span class="completed-tasks">Completed</span>
+      </div>
+  
+      <script src="script.js"></script>
+    </main>
+  </div>
+  
+</body>
+
+</html>
